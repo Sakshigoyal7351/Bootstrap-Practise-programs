@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="container text-dark justify-content-between d-flex">
+            <a href="#" routerLink="/" class="logo text-light bg-danger"><h2>Order Food</h2></a>
+            <nav class="align-self-center">
+                <div>
+                    <a  href="" routerLink="/cart">
+                        <i class="fa fa-lg fa-shopping-cart text-dark"></i>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="food-item container bg-light">
+        <div class="d-flex flex-row justify-content-center flex-wrap">
+            <div class="shadow m-3" *ngFor="let food of foods">
+                <div class="m-2">
+                    <a href="">
+                        <div class="mb-3">
+                            <img src="{{food.imageUrl}}" style="width: 250px; height:250px;" class="img-fluid img-center border rounded">
+                        </div>
+                    </a>
+                    <div class="border rounded">
+                        <div class="content m-2">
+                            <div class="d-flex justify-content-between mb-3">
+                                <p class="name pb-0 mb-1 text-warning">
+                                    {{food.name}}
+                                </p>
+                                <span class="favorite" > {{food.favorite?'❤️':''}} </span>
+                            </div>
+                            <div class="product-item-footer text-muted">
+                                <h6 class="d-flex justify-content-between">
+                                    <span class="origins text-capitalize">
+                                        <span *ngFor="let origin of food.origins">
+                                            {{origin}}
+                                        </span>
+                                    </span>
+                                    <span class="cook-time">
+                                        <span>🕤</span>
+                                        {{food.cookTime}}
+                                    </span>
+                                </h6>
+                                <h6 class="price">
+                                    Rs. {{food.price}}
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

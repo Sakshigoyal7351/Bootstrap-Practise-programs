@@ -1,0 +1,118 @@
+.container
+{
+    border: 2px solid black;
+}
+
+/* .row
+{
+    border: 3px solid blue;
+    margin: 8px 0;
+    padding: 12px 40px;
+} */
+
+.pink
+{
+    background: pink;
+   
+}
+
+.orange
+{
+    background: orange;
+
+    
+}
+
+
+.blue
+{
+    background: blue;
+
+    
+}
+
+.green 
+{
+    background-color: green;
+}
+
+
+input[type=text],
+input[type=password]
+{
+    width:100%;
+padding: 12px 40px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid blue;
+box-sizing: border-box;
+}
+
+
+.fontuser
+{
+    position: relative;
+}
+
+
+.fontuser i{
+    position: absolute;
+    left: 15px;
+    top: 40px;
+    color: gray;
+}
+
+.fontpassword{
+    position: relative;
+}
+
+.fontpassword i{
+    position: absolute;
+    left: 15px;
+    top: 40px;
+    color: grey;
+}
+
+button{
+    background-color: green;
+    color: white;
+    padding:  15px, 20px;
+    border:none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.container{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.container{
+    width: auto;
+   
+    margin-top: 100px;
+}
+
+.nav{
+    /* background: darkcyan; */
+}
+
+
+.nav-link
+{
+    /* color: white; */
+
+    color: black;
+}
+
+.nav-link:hover{
+    color: white;
+    background: sandybrown;
+}
+
+.card-img-bottom{
+    position:absolute;
+    bottom:0;
+    right:0;
+}

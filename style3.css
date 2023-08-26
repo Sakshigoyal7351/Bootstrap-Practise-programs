@@ -1,0 +1,26 @@
+.container
+{
+    border: 2px solid black;
+    margin-top: auto;
+    background-color: aqua;
+}
+
+
+.row
+{
+    border: 2px solid red;
+    margin-top: auto;
+    background-color: bisque;
+}
+
+
+
+.col-9, .col-3
+{
+    border: 2px solid blue;
+    background-color: yellow;
+}
+.col-3
+{
+    background-color: pink;
+}
